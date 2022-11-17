@@ -1,0 +1,35 @@
+button{
+    display: block;
+    margin: 20px;
+}
+
+#buscar {
+    border-radius: 20px;
+    width: 140px;
+    height: 30px;
+    background-color: whitesmoke;
+    border: 3px solid mediumspringgreen;
+    color: mediumspringgreen;
+    font-weight: 700;
+}
+
+#mas {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: mediumspringgreen;
+    border: 0px;
+}
+
+#crear {
+    width: 170px;
+    height: 35px;
+    font-size: medium;
+    color: white;
+    background-color: dodgerblue;
+    border: 3px solid black;
+    box-shadow: 4px 4px black;
+}

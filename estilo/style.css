@@ -1,0 +1,31 @@
+* {
+    font-family: cursive;
+}
+
+h1 {
+    text-align: left;
+    font-weight: bold;
+    background-color: black;
+}
+
+h1 span#my {
+    color: white;
+}
+
+h1 span#cloud {
+    color: aqua;
+}
+
+h2 {
+    text-align: center;
+    background-color: rebeccapurple;
+    color: white;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+h3 {
+    text-align: right;
+    background-color: skyblue;
+    text-decoration: underline;
+}

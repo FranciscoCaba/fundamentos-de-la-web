@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="index.html">
+        <div>
+            <label for="nombre">Nombre: *  </label>
+            <input id="nombre" type="text">
+        </div>
+        <div>
+            <label for="apellido">Apellido: *  </label>
+            <input id="apellido" type="text">
+        </div>
+        <div>
+            <label for="correo">Correo Electronico: *  </label>
+            <input id="correo" type="text">
+        </div>
+        <div>
+            <label for="contraseña">Contraseña: *  </label>
+            <input id="contraseña" type="password">
+        </div>
+        <div>
+            <label for="confirmar-contraseña">Confirmar Contraseña: *  </label>
+            <input id="confirmar-contraseña" type="password">
+        </div>
+        <div>
+            <label for="cumpleaños">Cumpleaños:  </label>
+            <input id="cumpleaños" type="date">
+        </div>
+        <label>Identidad de Género:</label>
+        <div>
+            <input id="masculino" type="radio" name="genero">
+            <label for="masculino">Masculino</label>
+            <input id="femenino" type="radio" name="genero">
+            <label for="femenino">Femenino</label>
+            <input id="no-binario" type="radio" name="genero">
+            <label for="no-binario">No Binario</label>
+            <input id="no-responder" type="radio" name="genero">
+            <label for="no-responder">Prefiero no responder</label>
+        </div>
+        <div>
+            <label for="descripcion">Una breve descripción acerca de mí:</label>
+        </div>
+        <div>
+            <textarea id="descripcion" cols="40" rows="3"></textarea>
+        </div>
+        <div>
+            <label>Lenguaje Preferido:  </label>
+            <select>
+                <option>JavaScript</option>
+                <option>C++</option>
+                <option>Python</option>
+            </select>
+        </div>
+        <div>
+            <input id="noticias" type="checkbox" checked>
+            <label for="noticias">Sí, me gustaría recibir noticias periódicas vía email.</label>
+        </div>
+        <div>
+            <input type="submit" value="Crear Cuenta">
+        </div>
+        <p>* Indica un campo requerido</p>
+    </form>
+</body>
+</html>
