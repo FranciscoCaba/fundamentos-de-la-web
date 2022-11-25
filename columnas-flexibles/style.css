@@ -1,12 +1,20 @@
 .row {
-
+    background-color: salmon;
+    display: flex;
+}
+.col, .col-2, .col-3 {
+    background-color: rebeccapurple;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: 900;
 }
 .col {
-
+    flex: 1;
 }
 .col-2 {
-
+    flex: 2;
 }
 .col-3 {
-    
+    flex: 3;
 }
