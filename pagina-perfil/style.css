@@ -4,16 +4,27 @@
 body {
     margin: 0px;
 }
+.info-perfil, .side-bar {
+    display: inline-block;
+}
+.info-perfil {
+    width: 70%;
+}
+.side-bar {
+    width: 20%;
+}
 
 /*       NAV BAR         */
 
 .nav {
     margin: 0px;
     height: 40px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     background-color: #333333;
     padding: 10px;
+    position: fixed;
 }
 li h1 {
     color: white;
@@ -31,7 +42,7 @@ li {
     padding: 10px;
     list-style-type: none;
 }
-a {
+li a {
     text-decoration: none;
 }
 li a:visited, li a:link {
@@ -50,18 +61,19 @@ li a:hover {
 
 /*    USUARIO     */
 
-.container {
-    width: 50%;
-    margin: 10em auto;
-    border: 3px solid lightgrey;
+.usuario-container {
+    width: 80%;
+    margin: 5em auto;
 }
 .arriba {
     height: 100px;
-    margin-bottom: 10px;
     background-color: #17a2b8;
 }
 .informacion {
     padding: 30px;
+    padding-top: 40px;
+    border: 3px solid lightgrey;
+    border-top: 0px;
 }
 .img-perfil {
     position: relative;
@@ -82,4 +94,76 @@ li a:hover {
 .ubicacion-container {
     display: flex;
     align-items: center;
+}
+
+/* TARJETA EDUCACION */
+.educacion-container {
+    width: 80%;
+    margin: 5em auto;
+}
+.titulo-educacion {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #333333;
+    padding-left: 1.5em;
+}
+.titulo-educacion h3 {
+    color: white;
+}
+.educacion-info {
+    padding: 30px;
+    border: 3px solid lightgrey;
+    border-top: 0px;
+}
+.fecha-merito {
+    color: #666666;
+}
+
+/* SIDE BAR */
+
+.container-solicitudes, .container-conexiones {
+    margin: 5em auto;
+}
+.titulo-side {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #333333;
+    padding-left: 1.5em;
+}
+.titulo-side h3 {
+    color: white;
+}
+.lista-solicitudes, .lista-conexiones, .view-more {
+    padding: 20px;
+    border: 3px solid lightgrey;
+    border-top: 0px;
+}
+.cantidad {
+    background-color: #cccccc;
+    border-radius: 1em;
+    padding: 0.1em 0.6em;
+    margin-right: 1em;
+}
+.solicitud{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.conexion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.conexion p {
+    margin-left: 1em;
+}
+.perfil-pequeno {
+    width: 50px;
+    border: 5px solid white;
+    border-radius: 100%;
+}
+.boton-solicitud {
+    width: 40px;
 }
