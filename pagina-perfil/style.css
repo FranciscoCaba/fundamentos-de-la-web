@@ -4,11 +4,16 @@
 body {
     margin: 0px;
 }
+.main {
+    display: flex;
+    justify-content: center;
+}
 .info-perfil, .side-bar {
+    vertical-align: top;
     display: inline-block;
 }
 .info-perfil {
-    width: 70%;
+    width: 40%;
 }
 .side-bar {
     width: 20%;
@@ -62,8 +67,8 @@ li a:hover {
 /*    USUARIO     */
 
 .usuario-container {
-    width: 80%;
-    margin: 5em auto;
+    /* width: 60%; */
+    margin: 5em 2em;
 }
 .arriba {
     height: 100px;
@@ -98,8 +103,8 @@ li a:hover {
 
 /* TARJETA EDUCACION */
 .educacion-container {
-    width: 80%;
-    margin: 5em auto;
+    /* width: 60%; */
+    margin: 5em 2em;
 }
 .titulo-educacion {
     display: flex;
@@ -123,7 +128,7 @@ li a:hover {
 /* SIDE BAR */
 
 .container-solicitudes, .container-conexiones {
-    margin: 5em auto;
+    margin: 5em 2em;
 }
 .titulo-side {
     display: flex;
