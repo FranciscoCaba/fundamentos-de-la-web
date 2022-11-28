@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+header {
+    height: 5em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cccccc;
+}
+.medio {
+    display: flex;
+}
+main, aside {
+    margin: 0.7em;
+}
+main{
+    flex: 3;
+    margin-left: 0;
+}
+aside {
+    flex: 1;
+    margin-right: 0;
+}
+section {
+    border: 2px solid black;
+    padding: 1em;
+    margin: 1.2em 0;
+}
+.definition-container {
+    display: flex;
+    align-items: center;
+}
+.word {
+    flex: 1;
+    text-align: center;
+}
+.definition {
+    flex: 3;
+}
