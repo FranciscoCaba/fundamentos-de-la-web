@@ -1,0 +1,54 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+/* Clase fixed-width container que se "autocentrará" a sí misma */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* Boton de busqueda */
+.btn {
+    border-radius: 20px;
+    width: 140px;
+    height: 30px;
+    background-color: whitesmoke;
+    border: 3px solid mediumspringgreen;
+    color: mediumspringgreen;
+    font-weight: 700;
+}
+/* Estilo para filas */
+.row {
+    background-color: salmon;
+    display: flex;
+}
+/* Estilo para columnas */
+.col {
+    background-color: rebeccapurple;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: 900;
+}
+/* Estilo para navbar */
+.navbar {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333333;
+    padding: 10px;
+}
+/* Boton con sombra en el fondo */
+.btn-shadow {
+    width: 170px;
+    height: 35px;
+    font-size: medium;
+    color: white;
+    background-color: dodgerblue;
+    border: 3px solid black;
+    box-shadow: 4px 4px black;
+}
