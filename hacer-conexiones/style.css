@@ -1,0 +1,174 @@
+* {
+    font-family: "Roboto";
+}
+body {
+    margin: 0px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+}
+.info-perfil, .side-bar {
+    vertical-align: top;
+    display: inline-block;
+}
+.info-perfil {
+    width: 40%;
+}
+.side-bar {
+    width: 20%;
+}
+
+/*       NAV BAR         */
+
+.nav {
+    margin: 0px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333333;
+    padding: 10px;
+    position: fixed;
+}
+li h1 {
+    color: white;
+}
+.btn, li {
+    font-size: 17px;
+}
+ul {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+li {
+    padding: 10px;
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+}
+li a:visited, li a:link {
+    color: #cccccc;
+}
+li a:hover {
+    color: white;
+    font-weight: bold;
+}
+.btn {
+    color: white;
+    background-color: #17a2b8;
+    border: 4px solid black;
+    box-shadow: 4px 4px black;
+}
+
+/*    USUARIO     */
+
+.usuario-container {
+    /* width: 60%; */
+    margin: 5em 2em;
+}
+.arriba {
+    height: 100px;
+    background-color: #17a2b8;
+}
+.informacion {
+    padding: 30px;
+    padding-top: 40px;
+    border: 3px solid lightgrey;
+    border-top: 0px;
+}
+.img-perfil {
+    position: relative;
+    top: 45px;
+    left: 30px;
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 100%;
+}
+.img-config {
+    width: 15px;
+    margin-right: 10px;
+}
+.img-ubicacion {
+    width: 10px;
+    margin-right: 15px;
+}
+.ubicacion-container {
+    display: flex;
+    align-items: center;
+}
+
+/* TARJETA EDUCACION */
+.educacion-container {
+    /* width: 60%; */
+    margin: 5em 2em;
+}
+.titulo-educacion {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #333333;
+    padding-left: 1.5em;
+}
+.titulo-educacion h3 {
+    color: white;
+}
+.educacion-info {
+    padding: 30px;
+    border: 3px solid lightgrey;
+    border-top: 0px;
+}
+.fecha-merito {
+    color: #666666;
+}
+
+/* SIDE BAR */
+
+.container-solicitudes, .container-conexiones {
+    margin: 5em 2em;
+}
+.titulo-side {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #333333;
+    padding-left: 1.5em;
+}
+.titulo-side h3 {
+    color: white;
+}
+.lista-solicitudes, .lista-conexiones, .view-more {
+    padding: 20px;
+    border: 3px solid lightgrey;
+    border-top: 0px;
+}
+.cantidad {
+    background-color: #cccccc;
+    border-radius: 1em;
+    padding: 0.1em 0.6em;
+    margin-right: 1em;
+}
+.solicitud{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.conexion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.conexion p {
+    margin-left: 1em;
+}
+.perfil-pequeno {
+    width: 50px;
+    border: 5px solid white;
+    border-radius: 100%;
+}
+.boton-solicitud {
+    width: 40px;
+}
