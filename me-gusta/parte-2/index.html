@@ -5,10 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <title>Me gusta - Parte 2</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Network</h1>
+    </header>
+    <h1 class="title">Your Feed</h1>
+    <main>    
+        <aside>
+            <img src="images/user.png" alt="user-image" class="user-image">
+            <div>
+                <a href="#">Add an avatar</a>
+                <h2>James Doe</h2>
+            </div>
+        </aside>
+        <div class="posts">
+            <div class="user-post">
+                <div class="post-head">
+                    <h2>Neil M</h2>
+                    <div class="likes-div">
+                        <p id="like-count-1">9 like(s)</p>
+                        <button id="count-1" class="like-button" onclick="addLike(this)">Like</button>
+                    </div>
+                </div>
+                <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+            </div><div class="user-post">
+                <div class="post-head">
+                    <h2>Nichole K</h2>
+                    <div class="likes-div">
+                        <p id="like-count-2">12 like(s)</p>
+                        <button id="count-2" class="like-button" onclick="addLike(this)">Like</button>
+                    </div>
+                </div>
+                <p>Just finished my <a href="#">next comic</a>, check it out</p>
+            </div><div class="user-post">
+                <div class="post-head">
+                    <h2>Jim R</h2>
+                    <div class="likes-div">
+                        <p id="like-count-3">9 like(s)</p>
+                        <button id="count-3" class="like-button" onclick="addLike(this)">Like</button>
+                    </div>
+                </div>
+                <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+            </div>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
