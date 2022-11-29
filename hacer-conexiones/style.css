@@ -171,4 +171,5 @@ li a:hover {
 }
 .boton-solicitud {
     width: 40px;
+    cursor: pointer;
 }

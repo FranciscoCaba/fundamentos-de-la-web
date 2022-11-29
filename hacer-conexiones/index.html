@@ -25,7 +25,7 @@
                     <img src="images/jane-m.jpg" alt="imagen de perfil" class="img-perfil">
                 </div>
                 <div class="informacion">
-                    <h1>Jane Doe</h1>
+                    <h1 id="user-name">Jane Doe</h1>
                     <div class="ubicacion-container">
                         <img src="icons/map-marker.png" alt="ubicacion" class="img-ubicacion">
                         <label>Seattle</label>
@@ -33,7 +33,7 @@
                     <p>Developer | Engineer | Problem Solver</p>
                     <p>Master of shadows and the Internet!</p>
                     <div class="config-container">
-                        <a href="#"><img src="icons/gear.png" alt="configuracion" class="img-config">edit profile</a>
+                        <a href="#" onclick="editProfile()"><img src="icons/gear.png" alt="configuracion" class="img-config">edit profile</a>
                     </div>
                 </div>
             </div>
@@ -56,27 +56,27 @@
         <div class="side-bar">
             <div class="container-solicitudes">
                 <div class="titulo-side">
-                    <h3 class="cantidad">2</h3>
+                    <h3 id="cantidad-solicitudes" class="cantidad">2</h3>
                     <h3>Connection Requests</h3>
                 </div>
                 <div class="lista-solicitudes">
-                    <div class="solicitud">
+                    <div id="solicitud-1" class="solicitud">
                         <img src="images/todd-s.jpg" alt="imagen-todd" class="perfil-pequeno">
                         <p>Todd E</p>
-                        <img src="icons/accept-circle.png" alt="icono-aceptar" class="boton-solicitud">
-                        <img src="icons/close-circle.png" alt="icono-rechazar" class="boton-solicitud">
+                        <img src="icons/accept-circle.png" alt="icono-aceptar" class="boton-solicitud boton-1" onclick="addConnection(this)">
+                        <img src="icons/close-circle.png" alt="icono-rechazar" class="boton-solicitud boton-1" onclick="denyConnection(this)">
                     </div>
-                    <div class="solicitud">
+                    <div id="solicitud-2" class="solicitud">
                         <img src="images/phil-s.jpg" alt="imagen-phil" class="perfil-pequeno">
                         <p>Phill K</p>
-                        <img src="icons/accept-circle.png" alt="icono-aceptar" class="boton-solicitud">
-                        <img src="icons/close-circle.png" alt="icono-rechazar" class="boton-solicitud">
+                        <img src="icons/accept-circle.png" alt="icono-aceptar" class="boton-solicitud boton-2" onclick="addConnection(this)">
+                        <img src="icons/close-circle.png" alt="icono-rechazar" class="boton-solicitud boton-2" onclick="denyConnection(this)">
                     </div>
                 </div>
             </div>
             <div class="container-conexiones">
                 <div class="titulo-side">
-                    <h3 class="cantidad">500+</h3>
+                    <h3 id="cantidad-conexiones" class="cantidad">418</h3>
                     <h3>Your Connections</h3>
                 </div>
                 <div class="lista-conexiones">
@@ -103,5 +103,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
