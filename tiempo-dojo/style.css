@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color: #9fc5f8;
+    color: white;
+    height: 3.5em;
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+ul {
+    width: 40%;
+}
+li {
+    padding: 10px;
+    list-style-type: none;
+}
+li a {
+    font-size: 1.3em;
+    text-decoration: none;
+}
+li a:visited, li a:link {
+    color: #fff;
+}
+select {
+    margin-left: 0.5em;
+}
+.weather-title {
+    margin-top: 1em;
+}
+.day{
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 1em;
+    padding-bottom: 1.5em;
+    margin: 0 0.8em;
+}
+#day-1 {
+    margin-left: 0;
+}
+#day-4 {
+    margin-right: 0;
+}
+.pronostico-img {
+    width: 70%;
+    border-radius: 50%;
+    margin: 1em 0;
+}
+.day-temperature {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+hr {
+    margin: 1em 0;
+}
+.cookie-popup {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #eeeeee;
+    border: 2px solid black;
+    position: fixed;
+    padding: 0.5em 1em;
+    bottom: 1em;
+    left: 20%;
+    visibility: hidden;
+}
+.cookie-info {
+    padding: 0 2em;
+}
+.accept-button {
+    background-color: #9fc5f8;
+    box-shadow: 3px 3px black;
+    width: 10em;
+    padding: 0.2em 0.5em;
+}

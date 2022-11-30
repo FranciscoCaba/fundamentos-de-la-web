@@ -5,10 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <title>DojoWeather</title>
 </head>
 <body>
-    
+    <header>
+        <div class="flex-container container">
+            <h1>DojoWeather</h1>
+            <ul class="flex-container">
+                <li><a href="#">Burbank</a></li>
+                <li><a href="#">Chicago</a></li>
+                <li><a href="#">Dallas</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <div class="weather-title flex-container">
+            <h1>
+                San Jose
+            </h1>
+            <span id="temperature-span" class="flex-container">
+                <p>
+                    show temperature in
+                </p>
+                <select name="temperature-convertion" id="temperature-convertion">
+                    <option value="°C">°C</option>
+                    <option value="°F">°F</option>
+                </select>
+            </span>
+        </div>
+        <hr>
+        <div class="days flex-container">
+            <div id="day-1" class="day">
+                <h2>Today</h2>
+                <img src="assets/some_rain.png" alt="rainy-image" class="pronostico-img">
+                <h3>some rain</h3>
+                <span class="day-temperature">
+                    <p class="red">24°</p>
+                    <p class="blue">18°</p>
+                </span>
+            </div>
+            <div id="day-2" class="day">
+                <h2>Tomorrow</h2>
+                <img src="assets/some_rain.png" alt="rainy-image" class="pronostico-img">
+                <h3>some sun</h3>
+                <span class="day-temperature">
+                    <p class="red">27°</p>
+                    <p class="blue">19°</p>
+                </span>
+            </div>
+            <div id="day-3" class="day">
+                <h2>Friday</h2>
+                <img src="assets/some_rain.png" alt="rainy-image" class="pronostico-img">
+                <h3>some clouds</h3>
+                <span class="day-temperature">
+                    <p class="red">21°</p>
+                    <p class="blue">16°</p>
+                </span>
+            </div>
+            <div id="day-4" class="day">
+                <h2>Saturday</h2>
+                <img src="assets/some_rain.png" alt="rainy-image" class="pronostico-img">
+                <h3>some sun</h3>
+                <span class="day-temperature">
+                    <p class="red">26°</p>
+                    <p class="blue">21°</p>
+                </span>
+            </div>
+        </div>
+    </main>
+    <div class="cookie-popup container">
+        <img src="assets/cookie.png" alt="cookie-icon">
+        <span class="cookie-info">
+            <h3>Stop! Cookie Time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analize our traffic. <a href="#">Read more...</a></p>
+        </span>
+        <button class="accept-button">
+            I Accept
+        </button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
