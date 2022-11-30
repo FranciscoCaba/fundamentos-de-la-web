@@ -14,9 +14,9 @@
         <div class="flex-container container">
             <h1>DojoWeather</h1>
             <ul class="flex-container">
-                <li><a href="#">Burbank</a></li>
-                <li><a href="#">Chicago</a></li>
-                <li><a href="#">Dallas</a></li>
+                <li onclick="showAlert()"><a href="#">Burbank</a></li>
+                <li onclick="showAlert()"><a href="#">Chicago</a></li>
+                <li onclick="showAlert()"><a href="#">Dallas</a></li>
             </ul>
         </div>
     </header>
@@ -29,7 +29,7 @@
                 <p>
                     show temperature in
                 </p>
-                <select name="temperature-convertion" id="temperature-convertion">
+                <select name="temperature-convertion" id="temperature-convertion" onchange="changeMeasures(this)">
                     <option value="°C">°C</option>
                     <option value="°F">°F</option>
                 </select>
@@ -42,8 +42,8 @@
                 <img src="assets/some_rain.png" alt="rainy-image" class="pronostico-img">
                 <h3>some rain</h3>
                 <span class="day-temperature">
-                    <p class="red">24°</p>
-                    <p class="blue">18°</p>
+                    <p class="red"><span class="temperature">24</span>°</p>
+                    <p class="blue"><span class="temperature">18</span>°</p>
                 </span>
             </div>
             <div id="day-2" class="day">
@@ -51,8 +51,8 @@
                 <img src="assets/some_rain.png" alt="rainy-image" class="pronostico-img">
                 <h3>some sun</h3>
                 <span class="day-temperature">
-                    <p class="red">27°</p>
-                    <p class="blue">19°</p>
+                    <p class="red"><span class="temperature">27</span>°</p>
+                    <p class="blue"><span class="temperature">19</span>°</p>
                 </span>
             </div>
             <div id="day-3" class="day">
@@ -60,8 +60,8 @@
                 <img src="assets/some_rain.png" alt="rainy-image" class="pronostico-img">
                 <h3>some clouds</h3>
                 <span class="day-temperature">
-                    <p class="red">21°</p>
-                    <p class="blue">16°</p>
+                    <p class="red"><span class="temperature">21</span>°</p>
+                    <p class="blue"><span class="temperature">16</span>°</p>
                 </span>
             </div>
             <div id="day-4" class="day">
@@ -69,8 +69,8 @@
                 <img src="assets/some_rain.png" alt="rainy-image" class="pronostico-img">
                 <h3>some sun</h3>
                 <span class="day-temperature">
-                    <p class="red">26°</p>
-                    <p class="blue">21°</p>
+                    <p class="red"><span class="temperature">26</span>°</p>
+                    <p class="blue"><span class="temperature">21</span>°</p>
                 </span>
             </div>
         </div>
@@ -81,7 +81,7 @@
             <h3>Stop! Cookie Time</h3>
             <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analize our traffic. <a href="#">Read more...</a></p>
         </span>
-        <button class="accept-button">
+        <button class="accept-button" onclick="hidePopup()">
             I Accept
         </button>
     </div>
