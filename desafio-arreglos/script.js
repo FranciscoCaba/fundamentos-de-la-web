@@ -24,9 +24,26 @@ function highPass(arr, cutoff) {
             filteredArr.push(arr[i]);
         }
     }
-    // tu código aquí
     return filteredArr;
 }
 var result = highPass([6, 8, 3, 10, -2, 5, 9], 5);
 console.log("\nSegundo desafio:");
 console.log(result); // esperamos de vuelta [6, 8, 10, 9]
+
+function betterThanAverage(arr) {
+    var sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum+=arr[i];
+    }
+    var prom = sum/arr.length;
+    var count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]>prom) {
+            count++;
+        }
+    }
+    return count;
+}
+var result = betterThanAverage([6, 8, 3, 10, -2, 5, 9]);
+console.log("\nTercer desafio:");
+console.log(result); // esperamos 4 de vuelta
