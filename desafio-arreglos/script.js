@@ -50,10 +50,21 @@ console.log(result); // esperamos 4 de vuelta
 console.log("\nCuarto desafio:");
 function reverse(arr) {
     var arrReverse = [];
-    for (let i = arr.length; i >= 0; i--) {
+    for (let i = arr.length-1; i >= 0; i--) {
         arrReverse.push(arr[i]);
     }
     return arrReverse;
 }
 var result = reverse(["a", "b", "c", "d", "e"]);
 console.log(result); // esperamos de vuelta ["e", "d", "c", "b", "a"]
+
+console.log("\nQuinto desafio:");
+function fibonacciArray(n) {
+    var fibArr = [0, 1];
+    for (let i = 2; i < n; i++) {
+        fibArr.push(fibArr[i-1]+fibArr[i-2]);
+    }
+    return fibArr;
+}
+var result = fibonacciArray(10);
+console.log(result); // esperamos de vuelta[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
